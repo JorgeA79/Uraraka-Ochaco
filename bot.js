@@ -6,6 +6,14 @@ const client = new Discord.Client();
 var prefix = "y!"
 var xprefix = "Y!"
 
+
+var helloV = [
+ 	"Hi",
+	"Ello,
+	"Ey",
+	"Hello"
+]
+
 var hello = [
  	"Hi",
 	"Ello uwu",
@@ -24,7 +32,7 @@ client.on('message', message => {
 });
   client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(('Ey')||('Hello')||('Hi')||('Ello')) {
+	if (message.content.startsWith((helloV)) {
 	
 		 var randomAnswer = hello[Math.floor(Math.random() * hello.length)];
 		message.channel.send(randomAnswer);
