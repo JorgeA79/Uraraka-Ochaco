@@ -9,11 +9,11 @@ client.on('ready',() => {
 var prefix = "m."
 
 client.on('message', message => {
-	if (message.author.bot){
-	if (message.content.startsWith('Bungou Stray')) {
+	
+	if (message.content.startsWith('Hello')) {
 
-		 message.channel.send(`@everyone WHAPAM );
+		 message.channel.send(`Ey );
 	}}
-});
+);
 //Important
 client.login(process.env.BOT_TOKEN);
