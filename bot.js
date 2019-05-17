@@ -31,6 +31,17 @@ client.on('message', message => {
 	}
 
 });
-  
+    client.on('message', message => {
+	if (message.author === client.user) return;
+	if (message.content.startsWith('Nudes')||('Send nudes')) {
+	
+const embed = new Discord.RichEmbed()
+  .setTitle("My nudes")
+  .setColor(0x7401DF)
+  .setImage("https://cdn.discordapp.com/attachments/373987435299733504/579073054471094273/unknown.png")
+  message.channel.send({embed});
+	}
+
+});
 
 client.login(process.env.BOT_TOKEN);
