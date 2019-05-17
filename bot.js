@@ -12,7 +12,7 @@ client.on('message', message => {
 	if (message.author.bot){
 	if (message.content.startsWith('Bungou Stray')) {
 
-		 message.channel.send(`@everyone WHAPAM );
+		 message.channel.send(`@everyone WHAPAM ');
 	}}
 });
 //Important
