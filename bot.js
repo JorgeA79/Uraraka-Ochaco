@@ -43,7 +43,7 @@ client.on('message', message => {
 
     client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith(('Nudes')||('Send nudes')) {
+	if (message.content.startsWith('Send nudes') {
 	
 const embed = new Discord.RichEmbed()
   .setTitle("My nudes")
