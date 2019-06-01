@@ -32,7 +32,7 @@ client.on('message', message => {
 });
   client.on('message', message => {
 	if (message.author === client.user) return;
-	if (message.content.startsWith((helloV)) {
+	if (message.content.startsWith(helloV) {
 	
 		 var randomAnswer = hello[Math.floor(Math.random() * hello.length)];
 		message.channel.send(randomAnswer);
