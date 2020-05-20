@@ -18,7 +18,7 @@ client.on("ready", () => {
 client.on('message', message => {
 	if (message.author === client.user) return;
 
-	if (message.content.startsWith(prefix + 'play')) {
+	if (message.content.startsWith('p!play')) {
 	
 	const channel = message.member.voiceChannel;
     	if (!channel){
