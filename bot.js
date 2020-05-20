@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const opus = require('node-opus');
+const ffmpeg = require('ffmpeg');
+const playArbitraryFFmpeg = require('discord.js-arbitrary-ffmpeg');
 
 
 client.on("ready", () => {
